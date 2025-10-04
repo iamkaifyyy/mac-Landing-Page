@@ -1,13 +1,13 @@
 import React from 'react'
 import { Canvas } from "@react-three/fiber";
 import "./style.css"
+import { OrbitControls } from '@react-three/drei';
+import MacContainer from './MacContainer';
 
 const App = () => {
   return <Canvas>
-    <mesh>
-      <boxGeometry />
-
-    </mesh>
+    <OrbitControls />
+    <MacContainer />
 
   </Canvas>
 }
